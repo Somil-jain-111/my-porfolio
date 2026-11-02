@@ -30,7 +30,7 @@ test('contact links use callable protocols', () => {
 });
 
 test('resume is available as a downloadable asset', async () => {
-  assert.match(html, /href="\/Somil_Jain_Sr_Software_Engineer\.pdf"[^>]*download/);
-  const resume = await stat(new URL('../public/Somil_Jain_Sr_Software_Engineer.pdf', import.meta.url));
+  assert.match(html, /href="\/Somil_Jain_Software_Engineer\.pdf"[^>]*download/);
+  const resume = await stat(new URL('../public/Somil_Jain_Software_Engineer.pdf', import.meta.url));
   assert.ok(resume.size > 100_000);
 });

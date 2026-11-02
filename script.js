@@ -147,7 +147,7 @@ const armL=box(.12,.65,.12,M.skin,-.34,1.33,0),armR=box(.12,.65,.12,M.skin,.34,1
 
 let avatarDestination = avatar.position.clone(), activeStop = 'home', moving = false, walkTime = 0;
 const speech = document.querySelector('[data-speech]');
-const speeches = {home:'Welcome to my engineering journey!',about:'Ownership turned curiosity into leadership.',skills:'These tools power production systems.',experience:'From intern to Senior Software Engineer II.',projects:'Systems built for real scale.',education:'Where the foundation was built.',contact:'Let’s create something reliable together!'};
+const speeches = {home:'Welcome to my engineering journey!',about:'Ownership turned curiosity into leadership.',skills:'These tools power production systems.',experience:'From intern to Software Engineer.',projects:'Systems built for real scale.',education:'Where the foundation was built.',contact:'Let’s create something reliable together!'};
 
 function navigate(stop) {
   if (!anchors[stop]) return;
